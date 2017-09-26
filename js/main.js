@@ -1,9 +1,8 @@
-$(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
+jQuery(document).ready(function($) {  
 
-    if (scroll >= $("#header").height()) {
-        $(".clearHeader").addClass("darkNavCustom");
-    } else {
-        $(".clearHeader").removeClass("darkNavCustom");
-    }
+// site preloader -- also uncomment the div in the header and the css style for #preloader
+$(window).load(function(){
+	$('#preloader').fadeOut('slow',function(){$(this).remove();});
+});
+
 });
