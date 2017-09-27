@@ -14,8 +14,6 @@ body h1, h2, h3, h4, p {
 
 */
 
-
-
 /* GENERAL STYLES */
 * {
     font-family: 'Open Sans', sans-serif;
@@ -86,7 +84,7 @@ li:hover{
     background-size: cover;
     background-repeat: repeat-x;
     background-position: left;
-    animation-duration: 200s;
+    animation-duration: 150s;
     animation-name: backgroundMove;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
@@ -98,6 +96,9 @@ li:hover{
     }
     50% {
         right: -80%;
+    }
+    50.01% {
+        right: -80%
     }
     100% {
         right: 0px;
@@ -857,12 +858,10 @@ li:hover{
     flex-basis: 100%;
 }
 
-
 /* CONTACT */
 .contactContain {
     
 }
-
 
 /* FOOTER */
 .madeByText {
@@ -903,10 +902,9 @@ body {
 	position:absolute;
 	left:50%; /* centers the loading animation horizontally one the screen */
 	top:50%; /* centers the loading animation vertically one the screen */
-	background-image:url(../img/circleLoading.gif); /* path to your loading animation */
+	background-image:url(../img/circles.gif); /* path to your loading animation */
     background-size: contain;
 	background-repeat:no-repeat;
 	background-position:center;
 	margin:-100px 0 0 -100px; /* is width and height divided by two */
 }
-
