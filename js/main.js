@@ -1,3 +1,4 @@
+
 $(function(){
     $(window).scroll(function() {
         var scroll = $(window).scrollTop(); // how many pixels you've scrolled
@@ -12,3 +13,4 @@ $(function(){
         }
     });
 }); 
+  
