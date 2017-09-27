@@ -13,7 +13,6 @@ $(function(){
         }
     });
 }); 
-  
 
 //PRELOADER ANIMATION
 $(window).on('load', function() { // makes sure the whole site is loaded 

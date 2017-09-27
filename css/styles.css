@@ -148,7 +148,7 @@ li:hover{
     color: rgb(100,100,100);
 }
 #arrowsDown a:hover {
-    background-color: none;
+    background-color: rgba(1,1,1,0.001)!important;
     text-decoration: none;
 }
 .animateArrows {
@@ -897,7 +897,6 @@ body {
 	background-color: black; /* change if the mask should have another color then white */
 	z-index:99; /* makes sure it stays on top */
 }
-
 #status {
 	width:200px;
 	height:200px;
