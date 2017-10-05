@@ -741,8 +741,11 @@ li:hover{
 .hiddenBlock {
     padding: 1em;
 }
-.hiddenBlock:hover .hiddenSpan{
-    display: block;
+.hiddenBlock:hover {
+    cursor: pointer;
+}
+.showSpan {
+    display: block!important;
 }
 
     /* FOR RESPONSIVENESS - ONLY SHOW WHEN GREATER THAN 820px */

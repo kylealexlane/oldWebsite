@@ -28,6 +28,24 @@ $(function(){
             
     
 });
+
+//FUNCTION FOR DISPLAYING EXPERIENCE ON CLICK
+$(function() {
+    $( "#box109" ).click(function() {
+        $("#hiddenSpan1").toggleClass( "showSpan" );
+    });
+});
+$(function() {
+    $( "#box113" ).click(function() {
+        $("#hiddenSpan2").toggleClass( "showSpan" );
+    });
+});
+
+$(function() {
+    $( "#box121" ).click(function() {
+        $("#hiddenSpan3").toggleClass( "showSpan" );
+    });
+});
              
 
 //PRELOADER ANIMATION
