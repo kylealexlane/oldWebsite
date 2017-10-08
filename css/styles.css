@@ -88,12 +88,12 @@ li:hover{
     height: 100vh;
     width: 400%;
     position: fixed;
-    background-image: url(../img/backgroundStars.jpg);
+    background-image: url(../img/backgroundStarsTestSmaller.jpg);
     background-attachment: local;
     background-size: cover;
     background-repeat: repeat-x;
     background-position: left;
-    animation-duration: 150s;
+    animation-duration: 130s;
     animation-name: backgroundMove;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
@@ -122,8 +122,8 @@ li:hover{
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-image: url(../img/kyleStanding.png);
-    background-attachment: scroll;
+    background-image: url(../img/kyleStandingTestSmaller.png);
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -337,7 +337,7 @@ li:hover{
 #projects{
     background-color: rgb(260,260,260);
     padding-top: 2em;
-    padding-bottom: 20em;
+    padding-bottom: 15em;
 }
 .projectsIntroContainer{
     text-align: center;
