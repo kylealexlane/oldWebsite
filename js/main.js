@@ -374,6 +374,37 @@ $(function(){
     my_image13.src = '../img/EauthStep13.png';
     var my_image14 = new Image();
     my_image14.src = '../img/EauthStep14.png';
+    
+    var my_image30 = new Image();
+    my_image30.src = '../img/SparkForLifeStep1.png';
+    var my_image32 = new Image();
+    my_image32.src = '../img/SparkForLifeStep2.png';
+    var my_image33 = new Image();
+    my_image33.src = '../img/SparkForLifeStep3.png';
+    var my_image34 = new Image();
+    my_image34.src = '../img/SparkForLifeStep4.png';
+    var my_image35 = new Image();
+    my_image35.src = '../img/SparkForLifeStep5.png';
+    var my_image36 = new Image();
+    my_image36.src = '../img/SparkForLifeStep6.png';
+    var my_image37 = new Image();
+    my_image37.src = '../img/SparkForLifeStep7.png';
+    var my_image38 = new Image();
+    my_image38.src = '../img/SparkForLifeStep8.png';
+    var my_image39 = new Image();
+    my_image39.src = '../img/SparkForLifeStep9.png';
+    var my_image40 = new Image();
+    my_image40.src = '../img/SparkForLifeStep10.png';
+    var my_image41 = new Image();
+    my_image41.src = '../img/SparkForLifeStep11.png';
+    var my_image412 = new Image();
+    my_image412.src = '../img/SparkForLifeStep12.png';
+    var my_image413 = new Image();
+    my_image413.src = '../img/SparkForLifeStep13.png';
+    var my_image414 = new Image();
+    my_image414.src = '../img/SparkForLifeStep14.png';
+    var my_image415 = new Image();
+    my_image415.src = '../img/IpadMMSTasks.png';
 });
 //PRELOADER ANIMATION
 $(window).on('load', function() { // makes sure the whole site is loaded 
