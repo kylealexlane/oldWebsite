@@ -360,19 +360,31 @@ li:hover{
 }
 .projects2Contain{
     height: 330vh;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: row;
     flex-direction: row;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-align-items: flex-start;
     align-items: flex-start;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-align-content: center;
     align-content: center;
 }
 .macContain{
     height: 100vh;
     width: 100%;
     flex-basis: 100%;
+    position: -webkit-sticky;
     position: sticky;
     top: 30px;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-align-content: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -468,6 +480,7 @@ li:hover{
 }
 #firstNationTextContain{
     flex-basis: 60%;
+    position: -webkit-sticky;
     position: sticky;
     top: 37%;
     display: flex;
@@ -548,6 +561,7 @@ li:hover{
     height: 100vh;
     width: 100%;
     flex-basis: 100%;
+    position: -webkit-sticky;
     position: sticky;
     top: 30px;
     display: flex;
