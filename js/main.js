@@ -344,7 +344,37 @@ $(function() {
     });
 });
              
-
+//FUNCTION FOR PRELOADING IMAGES
+$(function(){
+    var my_image = new Image();
+    my_image.src = '../img/EauthStep1.png';
+    var my_image2 = new Image();
+    my_image2.src = '../img/EauthStep2.png';
+    var my_image3 = new Image();
+    my_image3.src = '../img/EauthStep3.png';
+    var my_image4 = new Image();
+    my_image4.src = '../img/EauthStep4.png';
+    var my_image5 = new Image();
+    my_image5.src = '../img/EauthStep5.png';
+    var my_image6 = new Image();
+    my_image6.src = '../img/EauthStep6.png';
+    var my_image7 = new Image();
+    my_image7.src = '../img/EauthStep7.png';
+    var my_image8 = new Image();
+    my_image8.src = '../img/EauthStep8.png';
+    var my_image9 = new Image();
+    my_image9.src = '../img/EauthStep9.png';
+    var my_image10 = new Image();
+    my_image10.src = '../img/EauthStep10.png';
+    var my_image11 = new Image();
+    my_image11.src = '../img/EauthStep11.png';
+    var my_image12 = new Image();
+    my_image12.src = '../img/EauthStep12.png';
+    var my_image13 = new Image();
+    my_image13.src = '../img/EauthStep13.png';
+    var my_image14 = new Image();
+    my_image14.src = '../img/EauthStep14.png';
+});
 //PRELOADER ANIMATION
 $(window).on('load', function() { // makes sure the whole site is loaded 
             $('#status').fadeOut(); // will first fade out the loading animation 

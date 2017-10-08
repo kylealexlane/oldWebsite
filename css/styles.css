@@ -494,6 +494,7 @@ li:hover{
 #firstNationMacContain{
     height: 100vh;
     flex-basis: 40%;
+    position: -webkit-sticky;
     position: sticky;
     top: 30px;
     display: flex;
