@@ -2,9 +2,9 @@
 $(function(){
     $(window).scroll(function() {
         var scroll = $(window).scrollTop(); // how many pixels you've scrolled
-        var os = $('#about').offset().top; // pixels to the top of div1
-        var navHeight = $('#mainNav').height();
-        // change the color. either by adding a class or setting a css property
+        var os = $('#about').offset().top; // pixels to the top of about section
+        var navHeight = $('#mainNav').height(); // height of navbar
+        //Change color of navbar once past the height intro and navbar
         if(scroll > os - navHeight){
             $('#mainNav').addClass('darkNavBackground');
         }
@@ -12,6 +12,303 @@ $(function(){
             $('#mainNav').removeClass('darkNavBackground');
         }
         
+        //FOR MACBOOK CLOSING ANIMATION
+        var containOffset = $('#projects2').offset().top;
+        if(scroll > containOffset + 10){
+            $('#EauthMac').addClass('EauthStep1');
+        }
+        if(scroll < containOffset + 10){
+            $('#EauthMac').removeClass('EauthStep1');
+        }
+        if(scroll > containOffset + 30){
+            $('#EauthMac').addClass('EauthStep2');
+        }
+        if(scroll < containOffset + 30){
+            $('#EauthMac').removeClass('EauthStep2');
+        }
+        if(scroll > containOffset + 50){
+            $('#EauthMac').addClass('EauthStep3');
+        }
+        if(scroll < containOffset + 50){
+            $('#EauthMac').removeClass('EauthStep3');
+        }
+        if(scroll > containOffset + 70){
+            $('#EauthMac').addClass('EauthStep4');
+        }
+        if(scroll < containOffset + 70){
+            $('#EauthMac').removeClass('EauthStep4');
+        }
+        if(scroll > containOffset + 90){
+            $('#EauthMac').addClass('EauthStep5');
+        }
+        if(scroll < containOffset + 90){
+            $('#EauthMac').removeClass('EauthStep5');
+        }
+        if(scroll > containOffset + 110){
+            $('#EauthMac').addClass('EauthStep6');
+        }
+        if(scroll < containOffset + 110){
+            $('#EauthMac').removeClass('EauthStep6');
+        }
+        if(scroll > containOffset + 130){
+            $('#EauthMac').addClass('EauthStep7');
+        }
+        if(scroll < containOffset + 130){
+            $('#EauthMac').removeClass('EauthStep7');
+        }
+        if(scroll > containOffset + 140){
+            $('#EauthMac').addClass('EauthStep8');
+        }
+        if(scroll < containOffset + 140){
+            $('#EauthMac').removeClass('EauthStep8');
+        }
+        if(scroll > containOffset + 160){
+            $('#EauthMac').addClass('EauthStep9');
+        }
+        if(scroll < containOffset + 160){
+            $('#EauthMac').removeClass('EauthStep9');
+        }
+        if(scroll > containOffset + 180){
+            $('#EauthMac').addClass('EauthStep10');
+        }
+        if(scroll < containOffset + 180){
+            $('#EauthMac').removeClass('EauthStep10');
+        }
+        if(scroll > containOffset + 200){
+            $('#EauthMac').addClass('EauthStep11');
+        }
+        if(scroll < containOffset + 200){
+            $('#EauthMac').removeClass('EauthStep11');
+        }
+        if(scroll > containOffset + 220){
+            $('#EauthMac').addClass('EauthStep12');
+        }
+        if(scroll < containOffset + 220){
+            $('#EauthMac').removeClass('EauthStep12');
+        }
+        if(scroll > containOffset + 240){
+            $('#EauthMac').addClass('EauthStep13');
+        }
+        if(scroll < containOffset + 240){
+            $('#EauthMac').removeClass('EauthStep13');
+        }
+        if(scroll > containOffset + 260){
+            $('#EauthMac').addClass('EauthStep14');
+        }
+        if(scroll < containOffset + 260){
+            $('#EauthMac').removeClass('EauthStep14');
+        }
+        
+        //FOR EAUTH TEXT OVER MACS
+                //FIRST BLOCK OF TEXT
+        if(scroll > containOffset + 300 & scroll < containOffset + 600){
+            $('.EauthHidden1').addClass('showTextProjects');
+        }
+        else{
+            $('.EauthHidden1').removeClass('showTextProjects');
+        }
+        if(scroll > containOffset + 600 & scroll < containOffset + 750){
+            $('.EauthHidden1').addClass('fadeTextProjects');
+        }
+        else{
+            $('.EauthHidden1').removeClass('fadeTextProjects');
+        }
+                //SECOND BLOCK OF TEXT
+        if(scroll > containOffset + 750 & scroll < containOffset + 1050){
+            $('.EauthHidden2').addClass('showTextProjects');
+        }
+        else{
+            $('.EauthHidden2').removeClass('showTextProjects');
+        }
+        if(scroll > containOffset + 1050 & scroll < containOffset + 1200){
+            $('.EauthHidden2').addClass('fadeTextProjects');
+        }
+        else{
+            $('.EauthHidden2').removeClass('fadeTextProjects');
+        }
+                //THIRD BLOCK OF TEXT
+        if(scroll > containOffset + 1200 & scroll < containOffset + 1500){
+            $('.EauthHidden3').addClass('showTextProjects');
+        }
+        else{
+            $('.EauthHidden3').removeClass('showTextProjects');
+        }
+        if(scroll > containOffset + 1500 & scroll < containOffset + 1650){
+            $('.EauthHidden3').addClass('fadeTextProjects');
+        }
+        else{
+            $('.EauthHidden3').removeClass('fadeTextProjects');
+        }
+        
+        
+        //MMS TEXT CONTAIN DISTANCE FROM TOP
+        var OffsetMMS = $('#firstNationContain').offset().top;
+                //FADE IPAD IN
+        if (scroll > OffsetMMS - 300){
+            $('.firstNationMac').addClass('showFNIpad');
+        }
+        else{
+            $('.firstNationMac').removeClass('showFNIpad');
+        }
+        //FOR FN MMS TEXT
+                //FIRST BLOCK OF TEXT
+        if(scroll > OffsetMMS + 0 & scroll < OffsetMMS + 300){
+            $('.MMSHidden1').addClass('showTextProjects');
+            $('.firstNationMac').removeClass('firstNationMacSecond');
+        }
+        else{
+            $('.MMSHidden1').removeClass('showTextProjects');
+        }
+        if(scroll > OffsetMMS + 300 & scroll < OffsetMMS + 450){
+            $('.MMSHidden1').addClass('fadeTextProjects');
+        }
+        else{
+            $('.MMSHidden1').removeClass('fadeTextProjects');
+        }
+                //SECOND BLOCK OF TEXT
+        if(scroll > OffsetMMS + 450 & scroll < OffsetMMS + 750){
+            $('.MMSHidden2').addClass('showTextProjects');
+            $('.firstNationMac').addClass('firstNationMacSecond');
+        }
+        else{
+            $('.MMSHidden2').removeClass('showTextProjects');
+        }
+        if(scroll > OffsetMMS + 750 & scroll < OffsetMMS + 900){
+            $('.MMSHidden2').addClass('fadeTextProjects');
+        }
+        else{
+            $('.MMSHidden2').removeClass('fadeTextProjects');
+        }
+    
+        //FOR SPARK CONTAINER DISTANCE
+        
+        //FOR SPARK MAC ANIMATION
+        var containOffset = $('#projectsSparkContain').offset().top;
+        if(scroll > containOffset + 10){
+            $('#sparkMac').addClass('sparkStep1');
+        }
+        if(scroll < containOffset + 10){
+            $('#sparkMac').removeClass('sparkStep1');
+        }
+        if(scroll > containOffset + 30){
+            $('#sparkMac').addClass('sparkStep2');
+        }
+        if(scroll < containOffset + 30){
+            $('#sparkMac').removeClass('sparkStep2');
+        }
+        if(scroll > containOffset + 50){
+            $('#sparkMac').addClass('sparkStep3');
+        }
+        if(scroll < containOffset + 50){
+            $('#sparkMac').removeClass('sparkStep3');
+        }
+        if(scroll > containOffset + 70){
+            $('#sparkMac').addClass('sparkStep4');
+        }
+        if(scroll < containOffset + 70){
+            $('#sparkMac').removeClass('sparkStep4');
+        }
+        if(scroll > containOffset + 90){
+            $('#sparkMac').addClass('sparkStep5');
+        }
+        if(scroll < containOffset + 90){
+            $('#sparkMac').removeClass('sparkStep5');
+        }
+        if(scroll > containOffset + 110){
+            $('#sparkMac').addClass('sparkStep6');
+        }
+        if(scroll < containOffset + 110){
+            $('#sparkMac').removeClass('sparkStep6');
+        }
+        if(scroll > containOffset + 130){
+            $('#sparkMac').addClass('sparkStep7');
+        }
+        if(scroll < containOffset + 130){
+            $('#sparkMac').removeClass('sparkStep7');
+        }
+        if(scroll > containOffset + 140){
+            $('#sparkMac').addClass('sparkStep8');
+        }
+        if(scroll < containOffset + 140){
+            $('#sparkMac').removeClass('sparkStep8');
+        }
+        if(scroll > containOffset + 160){
+            $('#sparkMac').addClass('sparkStep9');
+        }
+        if(scroll < containOffset + 160){
+            $('#sparkMac').removeClass('sparkStep9');
+        }
+        if(scroll > containOffset + 180){
+            $('#sparkMac').addClass('sparkStep10');
+        }
+        if(scroll < containOffset + 180){
+            $('#sparkMac').removeClass('sparkStep10');
+        }
+        if(scroll > containOffset + 200){
+            $('#sparkMac').addClass('sparkStep11');
+        }
+        if(scroll < containOffset + 200){
+            $('#sparkMac').removeClass('sparkStep11');
+        }
+        if(scroll > containOffset + 220){
+            $('#sparkMac').addClass('sparkStep12');
+        }
+        if(scroll < containOffset + 220){
+            $('#sparkMac').removeClass('sparkStep12');
+        }
+        if(scroll > containOffset + 240){
+            $('#sparkMac').addClass('sparkStep13');
+        }
+        if(scroll < containOffset + 240){
+            $('#sparkMac').removeClass('sparkStep13');
+        }
+        if(scroll > containOffset + 260){
+            $('#sparkMac').addClass('sparkStep14');
+        }
+        if(scroll < containOffset + 260){
+            $('#sparkMac').removeClass('sparkStep14');
+        }
+        //FOR SPARK TEXT
+                //FIRST BLOCK OF TEXT
+        if(scroll > containOffset + 300 & scroll < containOffset + 600){
+            $('.sparkHidden1').addClass('showTextProjects');
+        }
+        else{
+            $('.sparkHidden1').removeClass('showTextProjects');
+        }
+        if(scroll > containOffset + 600 & scroll < containOffset + 750){
+            $('.sparkHidden1').addClass('fadeTextProjects');
+        }
+        else{
+            $('.sparkHidden1').removeClass('fadeTextProjects');
+        }
+                //SECOND BLOCK OF TEXT
+        if(scroll > containOffset + 750 & scroll < containOffset + 1050){
+            $('.sparkHidden2').addClass('showTextProjects');
+        }
+        else{
+            $('.sparkHidden2').removeClass('showTextProjects');
+        }
+        if(scroll > containOffset + 1050 & scroll < containOffset + 1200){
+            $('.sparkHidden2').addClass('fadeTextProjects');
+        }
+        else{
+            $('.sparkHidden2').removeClass('fadeTextProjects');
+        }
+                //THIRD BLOCK OF TEXT
+        if(scroll > containOffset + 1200 & scroll < containOffset + 1500){
+            $('.sparkHidden3').addClass('showTextProjects');
+        }
+        else{
+            $('.sparkHidden3').removeClass('showTextProjects');
+        }
+        if(scroll > containOffset + 1500 & scroll < containOffset + 1650){
+            $('.sparkHidden3').addClass('fadeTextProjects');
+        }
+        else{
+            $('.sparkHidden3').removeClass('fadeTextProjects');
+        }
+        //FOR BOXES DISPLAYING
         var viewportHeight = $(window).height();
         var offset = 50;
         

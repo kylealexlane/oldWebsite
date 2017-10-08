@@ -333,7 +333,370 @@ li:hover{
     }
 }
 
+/* PROJECTS INTRO*/
+#projects{
+    background-color: rgb(260,260,260);
+    padding-top: 2em;
+    padding-bottom: 20em;
+}
+.projectsIntroContainer{
+    text-align: center;
+}
+#arrowsMiddle {
+    margin-top: 4em;
+    position: relative;
+    text-align: center;
+    flex-basis: 100%;
+    padding-top: 30px;
+}
+#arrowsMiddle i {
+    color: rgb(100,100,100);
+}
+
+
 /* PROJECTS */
+#projects2{
+    background-color: rgb(260,260,260);
+}
+.projects2Contain{
+    height: 330vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+}
+.macContain{
+    height: 100vh;
+    width: 100%;
+    flex-basis: 100%;
+    position: sticky;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+#EauthMac {
+    background-image: url(../img/EAUTHOption2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#projects2 h1{
+    font-weight: 400;
+    font-size: 40px;
+}
+#projects2 h2{
+    font-weight: 200;
+}
+#projects2 h3{
+    font-weight: 200;
+}
+.EauthStep1{
+    background-image: url(../img/EauthStep1.png)!important;
+}
+.EauthStep2{
+    background-image: url(../img/EauthStep2.png)!important;
+}
+.EauthStep3{
+    background-image: url(../img/EauthStep3.png)!important;
+}
+.EauthStep4{
+    background-image: url(../img/EauthStep4.png)!important;
+}
+.EauthStep5{
+    background-image: url(../img/EauthStep5.png)!important;
+}
+.EauthStep6{
+    background-image: url(../img/EauthStep6.png)!important;
+}
+.EauthStep7{
+    background-image: url(../img/EauthStep7.png)!important;
+}
+.EauthStep8{
+    background-image: url(../img/EauthStep8.png)!important;
+}
+.EauthStep9{
+    background-image: url(../img/EauthStep9.png)!important;
+}
+.EauthStep10{
+    background-image: url(../img/EauthStep10.png)!important;
+}
+.EauthStep11{
+    background-image: url(../img/EauthStep11.png)!important;
+}
+.EauthStep12{
+    background-image: url(../img/EauthStep12.png)!important;
+}
+.EauthStep13{
+    background-image: url(../img/EauthStep13.png)!important;
+}
+.EauthStep14{
+    background-image: url(../img/EauthStep14.png)!important;
+}
+
+.EauthHidden1{
+    display: none;
+}
+.EauthHidden2{
+    display: none;
+}
+.EauthHidden3{
+    display: none;
+}
+
+
+#firstNationContain{
+    height: 220vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+}
+#firstNationTextContain{
+    flex-basis: 60%;
+    position: sticky;
+    top: 37%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 20px;
+}
+#firstNationMacContain{
+    height: 100vh;
+    flex-basis: 40%;
+    position: sticky;
+    top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.firstNationMac{
+    background-image: url(../img/IpadMMSSignIn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 60%;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: none;
+    position: relative;
+}
+.firstNationMacSecond{
+    transition-delay: 1s;
+    background-image: url(../img/IpadMMSTasks.png);
+}
+.MMSHidden1{
+    display: none;
+}
+.MMSHidden2{
+    display: none;
+}
+.showFNIpad{
+    display: block;
+    animation-name: fadeInFromRight;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@keyframes fadeInFromRight{
+    0%{
+        opacity: 0;
+        left: 300px;
+    }
+    100%{
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+
+#projectsSparkContain{
+    height: 330vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+}
+.sparkContain{
+    height: 100vh;
+    width: 100%;
+    flex-basis: 100%;
+    position: sticky;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+#sparkMac {
+    background-image: url(../img/SparkForLifeOption2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.sparkStep1{
+    background-image: url(../img/SparkForLifeStep1.png)!important;
+}
+.sparkStep2{
+    background-image: url(../img/SparkForLifeStep2.png)!important;
+}
+.sparkStep3{
+    background-image: url(../img/SparkForLifeStep3.png)!important;
+}
+.sparkStep4{
+    background-image: url(../img/SparkForLifeStep4.png)!important;
+}
+.sparkStep5{
+    background-image: url(../img/SparkForLifeStep5.png)!important;
+}
+.sparkStep6{
+    background-image: url(../img/SparkForLifeStep6.png)!important;
+}
+.sparkStep7{
+    background-image: url(../img/SparkForLifeStep7.png)!important;
+}
+.sparkStep8{
+    background-image: url(../img/SparkForLifeStep8.png)!important;
+}
+.sparkStep9{
+    background-image: url(../img/SparkForLifeStep9.png)!important;
+}
+.sparktep10{
+    background-image: url(../img/SparkForLifeStep10.png)!important;
+}
+.sparkStep11{
+    background-image: url(../img/SparkForLifeStep11.png)!important;
+}
+.sparkStep12{
+    background-image: url(../img/SparkForLifeStep12.png)!important;
+}
+.sparkStep13{
+    background-image: url(../img/SparkForLifeStep13.png)!important;
+}
+.sparkStep14{
+    background-image: url(../img/SparkForLifeStep14.png)!important;
+}
+
+.sparkHidden1{
+    display: none;
+}
+.sparkHidden2{
+    display: none;
+}
+.sparkHidden3{
+    display: none;
+}
+
+        /*Keep at bottom to follow CSS rules*/
+.showTextProjects{
+    display: block;
+    position: relative;
+    animation-name: fadeInTextUp;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@keyframes fadeInTextUp{
+    0%{
+        color: rgba(1,1,1,0.0001);
+        top: 100px;
+    }
+    100%{
+        color: rgba(1,1,1,1);
+        top: 0px;
+    }
+}
+.fadeTextProjects{
+    display: block;
+    position: relative;
+    animation-name: fadeOutTextUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@keyframes fadeOutTextUp{
+    0%{
+        opacity: 100;
+        top: 0px;
+    }
+    100%{
+        opacity: 0;
+        top: -500px;
+    }
+}
+#projects2 i {
+    color: rgb(60,60,60);
+    font-size: 40px;
+    font-weight: 200;
+    border-style: solid;
+    border-radius: 100%;
+    padding: 5px;
+}
+#projects2 i:hover {
+    animation-name: animLink;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes animLink {
+    0%{
+        color: rgba(100,100,100,1);
+    }
+    100%{
+        color: rgba(60,60,60,0.2);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #firstNationContain h1{
+        font-weight: 400;
+        font-size: 30px;
+}
+    #firstNationContain h2{
+        font-weight: 200;
+        font-size: 18px;
+}
+    #firstNationContain h3{
+        font-weight: 200;
+        font-size: 18px;
+    }
+}
+/*
 .projectsContain {
     display: flex;
     flex-direction: row;
@@ -603,6 +966,7 @@ li:hover{
     }
 }
 
+*/
 
 /* EXPERIENCE */
 
