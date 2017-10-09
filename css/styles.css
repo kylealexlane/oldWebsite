@@ -297,18 +297,26 @@ li:hover{
     background-image: url(../img/stickFigureWaving.svg);
     background-position: center center;
     background-size: contain;
-    height: 80vh;
+    height: 90vh;
     width: 100%;
-    flex-basis: 30%;
+    flex-basis: 33%;
     background-repeat: no-repeat;
 }
 .aboutMeText {
     font-weight: 200;
-    flex-basis: 50%;
-    font-size: 140%;
+    flex-basis: 53%;
 }
 .aboutMeText h1 {
     text-align: left;
+    font-weight: 400;
+}
+.aboutMeText h2 {
+    text-align: left;
+    font-weight: 200;
+}
+.aboutMeText h3 {
+    text-align: left;
+    font-weight: 200;
 }
 @media only screen and (max-width:620px){
     .aboutContain {
@@ -702,19 +710,306 @@ li:hover{
     }
 }
 
-@media only screen and (max-width: 600px){
-    #firstNationContain h1{
-        font-weight: 400;
-        font-size: 30px;
-}
-    #firstNationContain h2{
-        font-weight: 200;
-        font-size: 18px;
-}
-    #firstNationContain h3{
-        font-weight: 200;
-        font-size: 18px;
+@media only screen and (max-width: 760px){
+        /* PROJECTS INTRO*/
+    #projects{
+        background-color: rgb(260,260,260);
+        padding-top: 30vh;
+        padding-bottom: 0vh;
     }
+    .projectsIntroContainer{
+        padding: 1em;
+        text-align: center;
+    }
+    .projectsIntroContainer h1 {
+        font-size: 28px;
+    }
+    #arrowsMiddle {
+        margin-top: 3em;
+        position: relative;
+        text-align: center;
+        flex-basis: 100%;
+        padding-top: 30px;
+    }
+    #arrowsMiddle i {
+        color: rgb(100,100,100);
+    }
+
+
+    /* PROJECTS */
+    #projects2{
+        background-color: rgb(260,260,260);
+    }
+    .projects2Contain{
+        height: 330vh;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-align-content: center;
+        align-content: center;
+    }
+    .macContain{
+        height: 100vh;
+        width: 100%;
+        flex-basis: 100%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 1px;
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+        -webkit-align-content: center;
+        -webkit-align-items: center;
+        -webkit-justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #EauthMac {
+        background-image: url(../img/EAUTHOption2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        width: 90%;
+        height: 85vh;
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+        -webkit-align-content: center;
+        -webkit-align-items: center;
+        -webkit-justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #projects2 h1{
+        font-weight: 400;
+        font-size: 40px;
+    }
+    #projects2 h2{
+        font-weight: 200;
+    }
+    #projects2 h3{
+        font-weight: 200;
+    }
+
+    .EauthHidden1{
+        display: none;
+    }
+    .EauthHidden2{
+        display: none;
+    }
+    .EauthHidden3{
+        display: none;
+    }
+
+
+    #firstNationContain{
+        height: 220vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        align-content: center;
+    }
+    #firstNationTextContain{
+        flex-basis: 60%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 24%;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0px 20px;
+    }
+    #firstNationMacContain{
+        height: 100vh;
+        flex-basis: 40%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 30px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .firstNationMac{
+        background-image: url(../img/IpadMMSSignIn.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right center;
+        width: 60%;
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: none;
+        position: relative;
+    }
+    .firstNationMacSecond{
+        transition-delay: 1s;
+        background-image: url(../img/IpadMMSTasks.png);
+    }
+    .MMSHidden1{
+        display: none;
+    }
+    .MMSHidden2{
+        display: none;
+    }
+    .showFNIpad{
+        display: block;
+        animation-name: fadeInFromRight;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }
+    @keyframes fadeInFromRight{
+        0%{
+            opacity: 0;
+            left: 300px;
+        }
+        100%{
+            opacity: 1;
+            left: 0px;
+        }
+    }
+
+
+    #projectsSparkContain{
+        height: 330vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        align-content: center;
+    }
+    .sparkContain{
+        height: 100vh;
+        width: 100%;
+        flex-basis: 100%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 1px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #sparkMac {
+        background-image: url(../img/SparkForLifeOption2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        width: 90%;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .sparkHidden1{
+        display: none;
+    }
+    .sparkHidden2{
+        display: none;
+    }
+    .sparkHidden3{
+        display: none;
+    }
+
+            /*Keep at bottom to follow CSS rules*/
+    .showTextProjects{
+        display: block;
+        position: relative;
+        animation-name: fadeInTextUp;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }
+    @keyframes fadeInTextUp{
+        0%{
+            color: rgba(1,1,1,0.0001);
+            top: 100px;
+        }
+        100%{
+            color: rgba(1,1,1,1);
+            top: 0px;
+        }
+    }
+    .fadeTextProjects{
+        display: block;
+        position: relative;
+        animation-name: fadeOutTextUp;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }
+    @keyframes fadeOutTextUp{
+        0%{
+            opacity: 100;
+            top: 0px;
+        }
+        100%{
+            opacity: 0;
+            top: -500px;
+        }
+    }
+    #projects2 i {
+        color: rgb(60,60,60);
+        font-size: 40px;
+        font-weight: 200;
+        border-style: solid;
+        border-radius: 100%;
+        padding: 5px;
+    }
+    #projects2 i:hover {
+        animation-name: animLink;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes animLink {
+        0%{
+            color: rgba(100,100,100,1);
+        }
+        100%{
+            color: rgba(60,60,60,0.2);
+        }
+    }
+    #projects2 h1{
+        font-weight: 400;
+        font-size: 26px;
+    }
+    #projects2 h2{
+        font-weight: 200;
+        font-size: 20px;
+    }
+    #projects2 h3{
+        font-weight: 200;
+        font-size: 16px;
+    } 
 }
 /*
 .projectsContain {

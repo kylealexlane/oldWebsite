@@ -9,5 +9,5 @@ gulp.task('autoprefixer', function () {
         .pipe(sourcemaps.init())
         .pipe(postcss([ autoprefixer() ]))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('dest/css'));
+        .pipe(gulp.dest('dest'));
 });

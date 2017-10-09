@@ -1,4 +1,4 @@
-//CHANGING THE NAVBAR BACKGROUND COLOR and FADE BOXES IN
+//ALL FUNCTIONS REGARDING SCROLL HEIGHT 
 $(function(){
     $(window).scroll(function() {
         var scroll = $(window).scrollTop(); // how many pixels you've scrolled
@@ -406,6 +406,7 @@ $(function(){
     var my_image415 = new Image();
     my_image415.src = '../img/IpadMMSTasks.png';
 });
+
 //PRELOADER ANIMATION
 $(window).on('load', function() { // makes sure the whole site is loaded 
             $('#status').fadeOut(); // will first fade out the loading animation 
