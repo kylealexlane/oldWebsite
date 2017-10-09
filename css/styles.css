@@ -398,6 +398,11 @@ li:hover{
     background-position: center bottom;
     width: 90%;
     height: 90vh;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-align-content: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
     display: flex;
     flex-direction: column;
     align-content: center;
