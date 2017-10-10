@@ -11,3 +11,6 @@ gulp.task('autoprefixer', function () {
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dest'));
 });
+gulp.task('watch', function(){
+    gulp.watch('css/*.css', ['autoprefixer'])
+});
