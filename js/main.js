@@ -1,6 +1,7 @@
 //ALL FUNCTIONS REGARDING SCROLL HEIGHT 
 $(function(){
     $(window).scroll(function() {
+        var viewportHeight = $(window).height();
         var scroll = $(window).scrollTop(); // how many pixels you've scrolled
         var os = $('#about').offset().top; // pixels to the top of about section
         var navHeight = $('#mainNav').height(); // height of navbar
@@ -11,9 +12,21 @@ $(function(){
         if(scroll < os - navHeight ){
             $('#mainNav').removeClass('darkNavBackground');
         }
+            //CHANGING PROJECT CONTAINER COLOR TO WHITE
+        if(scroll > (os - 0.5 * viewportHeight) ){
+            $('.aboutContain').addClass('whiteBackgroundFade');
+        }
         
-        //FOR MACBOOK CLOSING ANIMATION
         var containOffset = $('#projects2').offset().top;
+         //CHANGE BACKGROUND TO PINK
+        if(scroll > containOffset ){
+            $('#projects2').addClass('pinkBackgroundFade');
+        }
+        if(scroll < containOffset ){
+            $('#projects2').removeClass('pinkBackgroundFade');
+        }
+        //FOR MACBOOK CLOSING ANIMATION
+               
         if(scroll > containOffset + 10){
             $('#EauthMac').addClass('EauthStep1');
         }
@@ -141,12 +154,23 @@ $(function(){
         }
         
         
-        //MMS TEXT CONTAIN DISTANCE FROM TOP
+        //MMS TEXT CONTAIN DISTANCE FROM TOP AND VARIABLE FOR SPARK
         var OffsetMMS = $('#firstNationContain').offset().top;
+        var containOffset = $('#projectsSparkContain').offset().top;
+        
+                //CHANGE BACKGROUND COLOR TO GREEN
+        if (scroll > OffsetMMS - 300 & scroll < containOffset){
+            $('#projects2').addClass('greenBackgroundFade');
+            $('#projects2').removeClass('blueBackgroundFade');
+        }
+        else{
+            $('#projects2').removeClass('greenBackgroundFade');
+        }
                 //FADE IPAD IN
         if (scroll > OffsetMMS - 300){
             $('.firstNationMac').addClass('showFNIpad');
         }
+        
         else{
             $('.firstNationMac').removeClass('showFNIpad');
         }
@@ -183,7 +207,12 @@ $(function(){
         //FOR SPARK CONTAINER DISTANCE
         
         //FOR SPARK MAC ANIMATION
-        var containOffset = $('#projectsSparkContain').offset().top;
+        
+        
+            //CHANGE BACKGROUND COLOR TO BLUE
+        if(scroll > containOffset ){
+            $('#projects2').addClass('blueBackgroundFade');
+        }
         if(scroll > containOffset + 10){
             $('#sparkMac').addClass('sparkStep1');
         }
@@ -308,8 +337,9 @@ $(function(){
         else{
             $('.sparkHidden3').removeClass('fadeTextProjects');
         }
+
         //FOR BOXES DISPLAYING
-        var viewportHeight = $(window).height();
+        
         var offset = 50;
         
         $("#box1,#box3,#box4,#box7,#box9,#box11,#box12,#box13,#box14,#box15,#box16,#box17,#box18,#box19,#box20,#box21,#box22,#box23,#box24,#box25,#box26,#box27,#box28,#box29,#box30,#box31,#box32,#box33,#box34,#box35,#box36,#box37,#box38,#box39,#box40,#box41,#box42,#box43,#box44,#box45,#box46,#box47,#box48,#box49,#box50,#box51,#box52,#box53,#box54,#box55,#box56,#box57,#box58,#box59,#box60,#box61,#box62,#box63,#box64,#box65,#box66,#box67,#box68,#box69,#box70,#box71,#box72,#box73,#box74,#box75,#box76,#box77,#box78,#box79,#box80,#box81,#box82,#box83,#box84,#box85,#box86,#box87,#box88,#box89,#box90,#box91,#box92,#box93,#box94,#box95,#box96,#box97,#box98,#box99,#box100,#box101,#box102,#box103,#box104,#box105,#box106,#box107,#box108,#box109,#box110,#box111,#box112,#box113,#box114,#box115,#box116,#box117,#box118,#box119,#box120,#box121,#box122,#box123,#box124,#box125,#box126,#box127,#box128,#box129,#box130,#box131,#box132,#box133,#box134,#box135,#box136,#box137,#box138,#box139,#box140,#box141,#box142,#box143,#box144,#box145,#box146,#box147,#box148,#box149,#box150,#box151,#box152,#box153,#box154,#box155,#box156,#box157,#box158,#box159,#box160,#box161,#box162,#box163,#box164,#box165,#box166,#box167,#box168,#box169,#box170,#box171,#box172,#box173,#box174,#box175,#box176,#box177,#box178,#box179,#box180,#box181,#box182,#box183,#box184,#box185,#box186,#box187,#box188,#box189,#box190,#box191,#box192,#box193,#box194,#box195,#box196,#box197,#box198,#box199").each(function(){

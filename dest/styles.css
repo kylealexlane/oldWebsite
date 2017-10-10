@@ -1,6 +1,5 @@
     
 body h1, h2, h3, h4, p {
-    color: rgb(60,60,60);
     font-weight: 200;
 }
 
@@ -396,7 +395,7 @@ li:hover{
 /* ABOUT */
 .aboutContain {
     padding: 9em 2em;
-    background-color: rgb(260,260,260);
+    background-color: rgba(260,260,260, 0.001);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -412,6 +411,37 @@ li:hover{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    color: rgba(1,1,1,1)!important;
+}
+.whiteBackgroundFade{
+    -webkit-animation-name: whiteBackgroundFade;
+            animation-name: whiteBackgroundFade;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+@-webkit-keyframes whiteBackgroundFade {
+    0% {
+        background-color: rgba(260,260,260,0.001);
+        color: rgba(260,260,260,0.001)!important;
+    }
+    100% {
+        background-color: rgba(260,260,260,1);
+        color: rgba(1,1,1,1)!important;
+    }
+}
+@keyframes whiteBackgroundFade {
+    0% {
+        background-color: rgba(260,260,260,0.001);
+        color: rgba(260,260,260,0.001)!important;
+    }
+    100% {
+        background-color: rgba(260,260,260,1);
+        color: rgba(1,1,1,1)!important;
+    }
 }
 .stickContain {
     background-image: url(../img/stickFigureWaving.svg);
@@ -485,7 +515,7 @@ li:hover{
 #projects{
     background-color: rgb(260,260,260);
     padding-top: 2em;
-    padding-bottom: 15em;
+    padding-bottom: 3em;
 }
 .projectsIntroContainer{
     text-align: center;
@@ -636,6 +666,15 @@ li:hover{
     background-image: url(../img/EauthStep14.png)!important;
 }
 
+.EauthHidden1 h1{
+    font-size: 70px!important;
+}
+.EauthHidden1 h1:hover{
+    color: #e254ff;
+}
+.pinkLetter{
+    color: #e254ff;
+}
 .EauthHidden1{
     display: none;
 }
@@ -645,6 +684,34 @@ li:hover{
 .EauthHidden3{
     display: none;
 }
+.pinkBackgroundFade{
+    background-color: rgba(260,260,260,1);
+    -webkit-animation-name: pinkBackgroundFade;
+            animation-name: pinkBackgroundFade;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+@-webkit-keyframes pinkBackgroundFade {
+    0% {
+        background-color: rgba(260,260,260,1);
+    }
+    100% {
+        background-color: rgb(60,60,60);
+    }
+}
+@keyframes pinkBackgroundFade {
+    0% {
+        background-color: rgba(260,260,260,1);
+    }
+    100% {
+        background-color: rgb(60,60,60);
+    }
+}
+
 
 
 #firstNationContain{
@@ -672,7 +739,7 @@ li:hover{
         flex-basis: 60%;
     position: -webkit-sticky;
     position: sticky;
-    top: 37%;
+    top: 30%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -782,6 +849,59 @@ li:hover{
         opacity: 1;
         left: 0px;
     }
+}
+.greenBackgroundFade{
+    background-color: rgba(260,260,260,1);
+    -webkit-animation-name: greenBackgroundFade;
+            animation-name: greenBackgroundFade;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+
+.greenBackgroundFadeReverse{
+    background-color: rgba(260,260,260,1);
+    -webkit-animation-name: greenBackgroundFadeReverse;
+            animation-name: greenBackgroundFadeReverse;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+@-webkit-keyframes greenBackgroundFadeReverse {
+    0% {
+        background-color: #ccff90
+;
+    }
+    100% {
+        background-color: #e1bee7;
+    }
+}
+@keyframes greenBackgroundFadeReverse {
+    0% {
+        background-color: #ccff90
+;
+    }
+    100% {
+        background-color: #e1bee7;
+    }
+}
+.FNmmsBackground{
+    position: relative;
+    display: inline-block;
+    background-image: url(../img/PaulFNLogo.png);
+    background-attachment: scroll;
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    top: 20px;
 }
 
 
@@ -895,6 +1015,16 @@ li:hover{
 .sparkStep14{
     background-image: url(../img/SparkForLifeStep14.png)!important;
 }
+.sparkForLifeLogo{
+    background-image: url(../img/SparkLogoBigger.png);
+    background-attachment: scroll;
+    background-position: bottom center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 500px;
+}
+
 
 .sparkHidden1{
     display: none;
@@ -905,7 +1035,60 @@ li:hover{
 .sparkHidden3{
     display: none;
 }
-
+.blueBackgroundFade{
+    background-color: rgba(260,260,260,1);
+    -webkit-animation-name: blueBackgroundFade;
+            animation-name: blueBackgroundFade;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+@-webkit-keyframes blueBackgroundFade {
+    0% {
+        background-color: rgb(1,1,1);
+    }
+    100% {
+        background-color: rgb(90,90,90);
+    }
+}
+@keyframes blueBackgroundFade {
+    0% {
+        background-color: rgb(1,1,1);
+    }
+    100% {
+        background-color: rgb(90,90,90);
+    }
+}
+.whiteFromBlue{
+    background-color: rgba(260,260,260,1);
+    -webkit-animation-name: whiteFromBlue;
+            animation-name: whiteFromBlue;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+@-webkit-keyframes whiteFromBlue {
+    0% {
+        background-color: #b3e5fc;
+    }
+    100% {
+        background-color: rgb(260,260,260);
+    }
+}
+@keyframes whiteFromBlue {
+    0% {
+        background-color: #b3e5fc;
+    }
+    100% {
+        background-color: rgb(260,260,260);
+    }
+}
         /*Keep at bottom to follow CSS rules*/
 .showTextProjects{
     display: block;
@@ -925,7 +1108,7 @@ li:hover{
         top: 100px;
     }
     100%{
-        color: rgba(1,1,1,1);
+        color: rgba(260,260,260,0.9);
         top: 0px;
     }
 }
@@ -935,7 +1118,7 @@ li:hover{
         top: 100px;
     }
     100%{
-        color: rgba(1,1,1,1);
+        color: rgba(260,260,260,0.9);
         top: 0px;
     }
 }
@@ -953,6 +1136,7 @@ li:hover{
 }
 @-webkit-keyframes fadeOutTextUp{
     0%{
+        color: rgba(260,260,260, 0.9);
         opacity: 100;
         top: 0px;
     }
@@ -963,6 +1147,7 @@ li:hover{
 }
 @keyframes fadeOutTextUp{
     0%{
+        color: rgba(260,260,260, 0.9);
         opacity: 100;
         top: 0px;
     }
@@ -972,7 +1157,7 @@ li:hover{
     }
 }
 #projects2 i {
-    color: rgb(60,60,60);
+    color: rgb(200,200,200);
     font-size: 40px;
     font-weight: 200;
     border-style: solid;
@@ -987,9 +1172,15 @@ li:hover{
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
 }
+#projects2 a:hover {
+    text-decoration: none!important;
+    background: none!important;
+    outline: none!important;
+    border: none!important;
+}
 @-webkit-keyframes animLink {
     0%{
-        color: rgba(100,100,100,1);
+        color: rgba(200,200,200,1);
     }
     100%{
         color: rgba(60,60,60,0.2);
@@ -997,19 +1188,40 @@ li:hover{
 }
 @keyframes animLink {
     0%{
-        color: rgba(100,100,100,1);
+        color: rgba(200,200,200,1);
     }
     100%{
         color: rgba(60,60,60,0.2);
     }
 }
-
-@media only screen and (max-width: 760px){
+        /* FOR SPARK BACKGROUND CHANGE BUT FOLLOWING CSS ORDER TO TAKE PRIORITY*/
+@-webkit-keyframes greenBackgroundFade {
+    0% {
+        background-color: rgb(60,60,60);
+    }
+    100% {
+        background-color: rgb(1,1,1);
+    }
+}
+@keyframes greenBackgroundFade {
+    0% {
+        background-color: rgb(60,60,60);
+    }
+    100% {
+        background-color: rgb(1,1,1);
+    }
+}
+@media only screen and (max-width: 820px){
+    
         /* PROJECTS INTRO*/
     #projects{
+        display: none;
         background-color: rgb(260,260,260);
         padding-top: 30vh;
         padding-bottom: 0vh;
+    }
+    #projects2{
+        display: none;
     }
     .projectsIntroContainer{
         padding: 1em;
@@ -1460,70 +1672,72 @@ li:hover{
     } 
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-	.fullheight {
-		height: 768px;
-	}
+
+
+#projectsIOS{
+    display: none;
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-	.fullheight {
-		height: 1024px;
-	}
-}
-/* iphone5 */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
-	.fullheight {
-		height: 320px;
-	}
-}
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
-	.fullheight {
-		height: 568px;
-	}
-}
-/* iPhone 4 */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-	.fullheight {
-		height: 320px;
-	}
-}
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-	.fullheight {
-		height: 480px;
-	}
-}
-/*
 .projectsContain {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-    align-items: flex-start;
-    align-content: center;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     background-color: rgb(260,260,260);
     padding: 2em;
     padding-bottom: 100px;
 }
 .projectsGrid {
-    flex-basis: 70%;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
     height: 350vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-content: space-around;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .projectsRectangle {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: none;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     text-align: center;
 }
 .projectsRectangle h3 {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     color: rgb(260,260,260);
     font-weight: 200;
     padding-bottom: 1em;
@@ -1531,37 +1745,52 @@ li:hover{
     font-size: 26px;
 }
 .projectsRectangle h2 {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     color: rgb(260,260,260);
     font-weight: 200;
     color: rgb(10,10,10);
     font-size: 40px;
 }
 .smallRectangle {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     width: auto;
     background-color: none;
     height: 63vh;
 }
 .generalProjectFormat{
     background-size: contain;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     height: 100%;
     width: 92%;
     background-repeat: no-repeat;
     background-position: center center; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     -webkit-transition: background-color 0.5s ease-out;
-    -moz-transition: background-color 0.5s ease-out;
-    -o-transition: background-color 0.5s ease-out;
     transition: background-color 0.5s ease-out;
 }
 .generalProjectFormat h1 {
@@ -1578,9 +1807,14 @@ li:hover{
     border-width: 3px;
     border-radius: 100%;
     color: rgba(260,260,260,0.001);
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .generalProjectFormat:hover i {
     color: rgb(260,260,260);
@@ -1588,9 +1822,12 @@ li:hover{
     font-weight: 200;
 }
 .generalProjectFormat i:hover {
-    animation-name: animLink;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: animLink;
+            animation-name: animLink;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 @keyframes animLink {
     0%{
@@ -1628,21 +1865,35 @@ li:hover{
     padding-right: 5em;
     height: 50vh;
     width: auto;
-    flex-basis: 30%;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
     position: -webkit-sticky;
     position: sticky;
     top: 25vh;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     margin-top: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
 }
 .checkOutText {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
 }
 .checkOutText h2  {
     text-align: center;
@@ -1657,76 +1908,126 @@ li:hover{
     background-size: contain;
     height: 50vh;
     width: 100%;
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     background-repeat: no-repeat;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
 }
 @media only screen and (max-width:820px) {
+    #projectsIOS {
+        display: block;
+    }
     .projectsContain {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: stretch;
-        align-items: flex-start;
-        align-content: center;
-        flex-wrap: wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: stretch;
+            -ms-flex-pack: stretch;
+                justify-content: stretch;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         background-color: rgb(260,260,260);
     }
     .projectsGrid {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         height: 300vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        align-content: space-around;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-line-pack: distribute;
+            align-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .projectsRectangle {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         background-color: none;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         text-align: center;
     }
     .projectsRectangle h3 {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         color: rgb(260,260,260);
         font-weight: 200;
         padding-bottom: 1em;
         color: rgb(10,10,10);
     }
     .projectsRectangle h2 {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         color: rgb(260,260,260);
         font-weight: 200;
         color: rgb(10,10,10);
     }
     .smallRectangle {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
         width: auto;
         background-color: none;
         height: 50vh;
     }
     .generalProjectFormat{
         background-size: contain;
-        align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
         height: 100%;
         width: 100%;
         background-repeat: no-repeat;
         background-position: center center; 
+        display: -webkit-box; 
+        display: -ms-flexbox; 
         display: flex;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         text-align: center;
         -webkit-transition: background-color 0.5s ease-out;
-        -moz-transition: background-color 0.5s ease-out;
-        -o-transition: background-color 0.5s ease-out;
         transition: background-color 0.5s ease-out;
     }
     .projectsGrid a:hover {
@@ -1762,7 +2063,7 @@ li:hover{
     }
 }
 
-*/
+
 
 /* EXPERIENCE */
 
